@@ -485,8 +485,16 @@ std::string to_name(quality t)
 			return "GPS fix";
 		case quality::dgps_fix:
 			return "DGPS fix";
+		case quality::pps_fix:
+			return "PPS fix";
+		case quality::rtk_fixed:
+			return "RTK Fixed";
+		case quality::rtk_float:
+			return "RTK Float";
 		case quality::guess:
 			return "guess";
+		case quality::manual_input_mode:
+			return "Manual Input Mode";
 		case quality::simulation:
 			return "simulation";
 	}
