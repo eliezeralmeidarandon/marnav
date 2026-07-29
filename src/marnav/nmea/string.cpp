@@ -170,7 +170,7 @@ std::string to_string(quality t)
 			return "1";
 		case quality::dgps_fix:
 			return "2";
-		case quality::pps_fixed:
+		case quality::pps_fix:
 			return "3";
 		case quality::rtk_fixed:
 			return "4";
