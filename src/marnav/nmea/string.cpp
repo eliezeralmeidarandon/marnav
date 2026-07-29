@@ -170,8 +170,16 @@ std::string to_string(quality t)
 			return "1";
 		case quality::dgps_fix:
 			return "2";
+		case quality::pps_fixed:
+			return "3";
+		case quality::rtk_fixed:
+			return "4";
+		case quality::rtk_float:
+			return "5";
 		case quality::guess:
 			return "6";
+		case quality::manual_input_mode:
+			return "7";
 		case quality::simulation:
 			return "8";
 	}
