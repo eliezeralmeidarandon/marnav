@@ -429,8 +429,20 @@ void read(const std::string & s, quality & value, data_format fmt)
 		case 2:
 			value = quality::dgps_fix;
 			break;
+		case 3:
+			value = quality::pps_fix;
+			break;
+		case 4:
+			value = quality::rtk_fixed;
+			break;
+		case 5:
+			value = quality::rtk_float;
+			break;
 		case 6:
 			value = quality::guess;
+			break;
+		case 7:
+			value = quality::manual_input_mode;
 			break;
 		case 8:
 			value = quality::simulation;
